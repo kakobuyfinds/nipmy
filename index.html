@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <title>BaseTao spreadsheet | Vind, vergelijk en kies bewuster</title>
+  <meta name="description" content="Gebruik een BaseTao spreadsheet voor overzicht bij schoenen, kleding en accessoires. Ontdek categorieën en praktische tips voor maten, QC-foto’s en verzendkosten.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#23483f">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="BaseTao spreadsheet — van inspiratie naar een doordachte keuze">
+  <meta property="og:description" content="Tien modecategorieën, duidelijke vergelijkingspunten en antwoorden op vragen over maten, productfoto’s en totale kosten.">
+  <meta property="og:image" content="https://i.ibb.co/gRWB2TQ/nike-air-force-1-louis-vuitton.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root{--paper:#f7f5ee;--white:#fffefb;--ink:#202e29;--green:#23483f;--muted:#59645c;--line:#d8ddd2;--lime:#e2edaa;--orange:#b84928;--radius:18px}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-underline-offset:4px}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+    img{display:block;width:100%;height:auto}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{line-height:1.15;letter-spacing:-.035em}
+    h1{font-size:clamp(2.7rem,6vw,5.1rem);font-weight:750;margin-bottom:24px;max-width:780px}
+    h2{font-size:clamp(1.9rem,3.5vw,3rem);margin-bottom:20px}
+    h3{font-size:1.25rem}
+    p{margin-bottom:18px}
+    .wrap{width:min(1200px,calc(100% - 40px));margin:auto}
+    .top{border-bottom:1px solid var(--line)}
+    .top-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0}
+    .wordmark{text-decoration:none;font-size:1.25rem;font-weight:800;letter-spacing:-.04em}
+    .top-note{font-size:.8rem;color:var(--muted);text-align:right}
+    .eyebrow{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;font-weight:750;color:var(--green);margin-bottom:15px}
+    .categories{padding:25px 0 30px}
+    .category-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:14px}
+    .category-heading h2{font-size:1rem;letter-spacing:0;margin:0}
+    .category-heading span{font-size:.78rem;color:var(--muted)}
+    .category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+    .category-grid a{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:54px;background:var(--white);border:1px solid var(--line);border-radius:8px;padding:12px;font-size:.83rem;line-height:1.35;text-decoration:none;font-weight:650;transition:background .15s}
+    .category-grid a:hover{background:var(--lime)}
+    .category-grid b{font-weight:400;color:var(--green)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;padding:45px 0 55px;align-items:center;border-top:1px solid var(--line)}
+    .intro{font-size:1.08rem;max-width:610px;color:var(--muted)}
+    .button{display:inline-flex;justify-content:center;align-items:center;min-height:48px;border:1px solid var(--green);border-radius:100px;padding:11px 23px;background:var(--green);color:white;text-decoration:none;font-weight:650;font-size:.9rem}
+    .button:hover{background:#16382f}
+    .hero-note{font-size:.78rem;color:var(--muted);margin:15px 0 0}
+    figure{margin:0}
+    .hero-photo{background:#e9dfce;border-radius:var(--radius);overflow:hidden}
+    .hero-photo img{aspect-ratio:5/4;object-fit:cover}
+    figcaption{font-size:.75rem;color:var(--muted);padding-top:12px;line-height:1.5}
+    .answer-band{display:grid;grid-template-columns:.7fr 1.3fr;gap:35px;background:var(--green);color:white;padding:34px;border-radius:var(--radius)}
+    .answer-band h2{font-size:1.75rem;margin:0}
+    .answer-band p{margin:0;color:#e8eee7}
+    .section{padding:68px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:28px}
+    .section-head p{color:var(--muted);margin-bottom:0}
+    .section-head h2{margin-bottom:0}
+    .editorial-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}
+    .image-panel{overflow:hidden;border-radius:var(--radius);background:#e9e5da}
+    .image-panel img{aspect-ratio:4/3;object-fit:cover}
+    .visual-copy{padding:24px;background:var(--white);border-radius:var(--radius);border:1px solid var(--line)}
+    .visual-copy h3{font-size:1.5rem}
+    .visual-copy p{color:var(--muted)}
+    .mini-list{margin:20px 0 0;padding:0;list-style:none}
+    .mini-list li{padding:13px 0;border-top:1px solid var(--line);font-size:.92rem}
+    .mini-list strong{display:block}
+    .mini-list span{color:var(--muted)}
+    .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .guide{padding:28px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius)}
+    .number{display:inline-block;font-size:.75rem;color:var(--orange);font-weight:800;margin-bottom:26px}
+    .guide p,.guide li{font-size:.92rem;color:var(--muted)}
+    .guide ul{padding-left:18px;margin-bottom:0}
+    .table-box{overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--white)}
+    table{width:100%;border-collapse:collapse;min-width:650px;text-align:left;font-size:.9rem}
+    caption{text-align:left;padding:20px;font-weight:700;font-size:1rem}
+    th,td{padding:16px 20px;border-top:1px solid var(--line);vertical-align:top}
+    thead{background:#edf0e4}
+    th{font-weight:650}
+    .note{padding:19px 23px;background:#eeefdf;border-left:3px solid var(--green);margin-top:24px;font-size:.9rem}
+    .topics{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:30px}
+    .topic{border-top:3px solid var(--green);padding-top:18px}
+    .topic h3{font-size:1.1rem}
+    .topic p{font-size:.88rem;color:var(--muted)}
+    .detail-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:38px;align-items:start}
+    .detail-image img{aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+    .article{padding:0 0 25px;margin-bottom:25px;border-bottom:1px solid var(--line)}
+    .article:last-child{border:0;margin:0;padding:0}
+    .article h3{font-size:1.35rem}
+    .article p{font-size:.95rem;color:var(--muted);margin-bottom:12px}
+    .faq{max-width:900px}
+    details{border-bottom:1px solid var(--line);padding:21px 0}
+    summary{cursor:pointer;font-weight:700;line-height:1.5;padding-right:15px}
+    details p{margin:15px 0 0;color:var(--muted);font-size:.95rem}
+    .closing{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:34px;background:var(--lime);border-radius:var(--radius);margin:55px 0}
+    .closing h2{font-size:1.8rem;margin-bottom:10px}
+    .closing p{margin:0;max-width:670px}
+    footer{border-top:1px solid var(--line);padding:30px 0 40px}
+    footer p{max-width:900px;color:var(--muted);font-size:.79rem;margin:12px 0 0}
+    @media(min-width:1500px){.wrap{width:1240px}}
+    @media(max-width:900px){.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{gap:25px}.guide-grid{grid-template-columns:1fr}.guide{padding:25px}.number{margin-bottom:15px}.topics{grid-template-columns:1fr 1fr}.detail-layout{grid-template-columns:.8fr 1.2fr;gap:24px}}
+    @media(max-width:640px){.wrap{width:calc(100% - 30px)}.top-inner{padding:17px 0}.wordmark{font-size:1.05rem}.top-note{font-size:.68rem;max-width:130px}.categories{padding:20px 0}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.category-heading span{display:none}.hero{grid-template-columns:1fr;padding:30px 0 38px;gap:28px}h1{font-size:2.8rem}.hero-photo img{aspect-ratio:5/4}.answer-band{grid-template-columns:1fr;padding:25px;gap:17px}.section{padding:43px 0}.section-head,.editorial-grid,.detail-layout{grid-template-columns:1fr;gap:22px}.topics{gap:22px 18px}.detail-image img{aspect-ratio:4/3}.closing{display:block;padding:26px;margin:38px 0}.closing .button{margin-top:22px}.intro{font-size:1rem}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"BaseTao spreadsheet | Vind, vergelijk en kies bewuster",
+        "description":"Een Nederlandstalige gids voor het organiseren van modevondsten, het vergelijken van maten en het controleren van productinformatie.",
+        "inLanguage":"nl",
+        "about":{"@type":"Thing","name":"BaseTao spreadsheet"},
+        "mainEntity":{
+          "@type":"ItemList",
+          "name":"Modecategorieën bij HipobuyFind",
+          "numberOfItems":10,
+          "itemListElement":[
+            {"@type":"ListItem","position":1,"name":"Shoes","url":"https://hipobuyfind.com/category-911-Shoes.html"},
+            {"@type":"ListItem","position":2,"name":"Hoodies/Sweaters","url":"https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"},
+            {"@type":"ListItem","position":3,"name":"T-Shirts","url":"https://hipobuyfind.com/category-913-T-Shirts.html"},
+            {"@type":"ListItem","position":4,"name":"Jackets","url":"https://hipobuyfind.com/category-914-Jackets.html"},
+            {"@type":"ListItem","position":5,"name":"Pants/Shorts","url":"https://hipobuyfind.com/category-915-Pants%2FShorts.html"},
+            {"@type":"ListItem","position":6,"name":"Headwear","url":"https://hipobuyfind.com/category-916-Headwear.html"},
+            {"@type":"ListItem","position":7,"name":"Sets","url":"https://hipobuyfind.com/category-917-Sets.html"},
+            {"@type":"ListItem","position":8,"name":"Underwear/underpants","url":"https://hipobuyfind.com/category-918-underwear%2Funderpants.html"},
+            {"@type":"ListItem","position":9,"name":"Jersey","url":"https://hipobuyfind.com/category-919-Jersey.html"},
+            {"@type":"ListItem","position":10,"name":"Accessories","url":"https://hipobuyfind.com/category-920-Accessories.html"}
+          ]
+        }
+      },
+      {
+        "@type":"Article",
+        "headline":"Een bruikbare vergelijking begint bij dezelfde variant",
+        "inLanguage":"nl",
+        "description":"Praktische uitleg over het vergelijken van productvarianten, maattabellen, QC-foto’s en afzonderlijke kostenposten.",
+        "author":{"@type":"Organization","name":"HipobuyFind"}
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"nl",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Wat is een BaseTao spreadsheet?",
+            "acceptedAnswer":{"@type":"Answer","text":"Een BaseTao spreadsheet is een geordend overzicht van productverwijzingen en eigen onderzoeksnotities. Je kunt er categorie, variant, maten, kosten en fotocontroles in vastleggen. Een vermelding bewijst geen voorraad, kwaliteit of authenticiteit."}
+          },
+          {
+            "@type":"Question",
+            "name":"Kan ik op deze pagina een spreadsheet downloaden?",
+            "acceptedAnswer":{"@type":"Answer","text":"Nee. Deze pagina biedt een leesbare gids en categorie-ingangen naar HipobuyFind. Er is hier geen downloadbaar spreadsheetbestand of live koppeling met een BaseTao-account."}
+          },
+          {
+            "@type":"Question",
+            "name":"Hoe vergelijk ik kledingmaten?",
+            "acceptedAnswer":{"@type":"Answer","text":"Vergelijk de afmetingen in centimeters van de gekozen variant met een goed passend kledingstuk dat je al bezit. Controleer hoe de verkoper meet en of de tabel lichaamsmaten of kledingmaten vermeldt."}
+          },
+          {
+            "@type":"Question",
+            "name":"Wat vertellen QC-foto’s mij?",
+            "acceptedAnswer":{"@type":"Answer","text":"QC-foto’s kunnen zichtbare kenmerken van een specifiek artikel tonen, zoals kleur, naden en afmetingen. Controleer of de foto’s bij jouw bestelling en variant horen. Foto’s bewijzen geen authenticiteit, samenstelling of duurzaamheid."}
+          },
+          {
+            "@type":"Question",
+            "name":"Hoe bereken ik de totale kosten?",
+            "acceptedAnswer":{"@type":"Answer","text":"Tel de artikelprijs, binnenlandse verzending, eventuele servicekosten, internationale verzending en toepasselijke belastingen of invoerkosten bij elkaar op. Controleer wat al in een offerte is inbegrepen en gebruik de actuele wisselkoers en betaalvoorwaarden."}
+          },
+          {
+            "@type":"Question",
+            "name":"Is deze pagina officieel verbonden met BaseTao of de getoonde merken?",
+            "acceptedAnswer":{"@type":"Answer","text":"Nee. Dit is een onafhankelijke informatiepagina. Er wordt geen officiële samenwerking met BaseTao, Nike, Louis Vuitton, Gucci, Hermès of Dior geclaimd. Sfeerbeelden zijn geen bewijs van aanbod of authenticiteit."}
+          },
+          {
+            "@type":"Question",
+            "name":"Waar gaan de categorieknoppen naartoe?",
+            "acceptedAnswer":{"@type":"Answer","text":"De tien categorieknoppen openen de bijbehorende categorie op hipobuyfind.com. De overige navigatielinks openen de homepage van www.hipobuyfind.com."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/nipmy/">
+</head>
+<body>
+  <!--
+    Bestandsnaam: index.html.
+    Onderzoeksbeperking: de Google-resultatenpagina was niet rechtstreeks toegankelijk.
+    De geraadpleegde zoekindex leverde tien relevante domeinen; een exacte Google-top-10
+    en de volgorde daarvan zijn niet bevestigd. Zoekfragmenten zijn geen productverificatie.
+    Onderzoeksthema’s: categorieën, productlinks, maatvoering, QC, kosten en onderzoeksnotities.
+    Geraadpleegde domeinen:
+    basetaoship.com, linktr.ee/basetao, basetao.club, basetaoimport.com,
+    basetao-link.com, basetao-online.com, basetao.tattoo,
+    basetao-spreadsheet.org, spreadsheet-basetao.com, basetao.boats.
+    Secundaire zoekthema’s:
+    BaseTao finds; BaseTao productlinks; BaseTao QC-foto’s; BaseTao koopgids.
+    24 longtail-onderwerpen, verwerkt als praktische vragen en inhoud:
+    BaseTao spreadsheet voor beginners; BaseTao spreadsheet schoenen vergelijken;
+    BaseTao finds per categorie; BaseTao productlinks controleren;
+    BaseTao QC-foto’s beoordelen; BaseTao koopgids kledingmaten;
+    BaseTao spreadsheet maattabel lezen; BaseTao sneakers binnenzool meten;
+    BaseTao hoodies borstbreedte vergelijken; BaseTao T-shirts stofgewicht;
+    BaseTao jassen schouderbreedte; BaseTao broeken taille meten;
+    BaseTao shorts binnenbeenlengte; BaseTao pet hoofdomtrek;
+    BaseTao sets maten apart kiezen; BaseTao ondergoed materiaal;
+    BaseTao jersey bedrukking controleren; BaseTao accessoires afmetingen;
+    BaseTao verzendkosten inschatten; BaseTao volumetrisch gewicht begrijpen;
+    BaseTao totale kosten berekenen; BaseTao valuta en betaalvergoeding;
+    BaseTao productvariant vastleggen; BaseTao spreadsheet onderzoeksnotities.
+    Geen verzonnen productaantallen, prijzen, beoordelingen of keurmerken.
+    Een canonical moet na publicatie naar de echte URL van deze pagina verwijzen.
+  -->
+
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="wordmark" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <span class="top-note">Mode ontdekken.<br>Details bewust vergelijken.</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="categories" aria-label="Productcategorieën">
+      <div class="category-heading">
+        <h2>Begin bij je categorie</h2>
+        <span>Rechtstreeks naar HipobuyFind</span>
+      </div>
+      <div class="category-grid">
+        <a href="https://hipobuyfind.com/category-911-Shoes.html">Shoes <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-Shirts <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-914-Jackets.html">Jackets <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pants/Shorts <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-916-Headwear.html">Headwear <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-917-Sets.html">Sets <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underwear/underpants <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-919-Jersey.html">Jersey <b aria-hidden="true">↗</b></a>
+        <a href="https://hipobuyfind.com/category-920-Accessories.html">Accessories <b aria-hidden="true">↗</b></a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">De garderobenotities / een praktische gids</p>
+        <h1 id="hero-title">BaseTao spreadsheet.<br>Eerst kijken,<br>dan kiezen.</h1>
+        <p class="intro">Een mooie vondst verdient een tweede blik. Breng schoenen, kleding en accessoires overzichtelijk samen en vergelijk de details die voor jouw keuze tellen: pasvorm, uitvoering, foto’s en totale kosten.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Ontdek de catalogus <span aria-hidden="true">&nbsp;↗</span></a>
+        <p class="hero-note">Onafhankelijke uitleg. Categorieën openen op HipobuyFind.</p>
+      </div>
+      <figure>
+        <div class="hero-photo">
+          <img src="https://i.ibb.co/gRWB2TQ/nike-air-force-1-louis-vuitton.jpg" width="1000" height="800" fetchpriority="high" loading="eager" alt="Nike x Louis Vuitton Air Force 1-sneakers met bruin monogram op een oranje koffer">
+        </div>
+        <figcaption>Stijlinspiratie: Nike en Louis Vuitton. Beeldbron: Wondernet Magazine via i.ibb.co. Dit sfeerbeeld is geen actuele productaanbieding.</figcaption>
+      </figure>
+    </section>
+
+    <section class="answer-band" aria-labelledby="definition-title">
+      <h2 id="definition-title">Wat is een BaseTao spreadsheet?</h2>
+      <p>Een BaseTao spreadsheet is een geordend overzicht van productverwijzingen en eigen onderzoeksnotities. Je kunt er categorie, variant, maten, kosten en fotocontroles in vastleggen. Een vermelding bewijst geen voorraad, kwaliteit of authenticiteit.</p>
+    </section>
+
+    <section class="section" aria-labelledby="inspiration-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 / Kijk verder dan het eerste beeld</p>
+          <h2 id="inspiration-title">Een outfit begint bij verhoudingen.</h2>
+        </div>
+        <p>Van sportieve sneakers tot een opvallend accessoire: vergelijk vorm, kleur en formaat samen. Merknamen helpen bij het zoeken; concrete productgegevens helpen bij het kiezen.</p>
+      </div>
+      <div class="editorial-grid">
+        <figure>
+          <div class="image-panel">
+            <img src="https://www.purseblog.com/images/2018/08/Perfect-Pairings-Gucci-Belt-Bag-Nike-Air-Force-1-1.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Witte Gucci-heuptas met groen-rode streep naast witte Nike Air Force 1-sneakers met gouden details">
+          </div>
+          <figcaption>Gucci en Nike als combinatie van sport en accessoires. Beeldbron: PurseBlog. Controleer het concrete artikel altijd afzonderlijk.</figcaption>
+        </figure>
+        <div class="visual-copy">
+          <p class="eyebrow">BaseTao finds met context</p>
+          <h3>Bewaar waarom iets opvalt.</h3>
+          <p>Een afbeelding onthoud je makkelijker dan een artikelcode. Noteer toch de uitvoering: een vergelijkbare foto kan bij een andere kleur, maat of materiaalvariant horen.</p>
+          <ul class="mini-list">
+            <li><strong>Sneakers &amp; kleding</strong><span>Vergelijk het silhouet, de afmetingen en de gewenste bewegingsruimte.</span></li>
+            <li><strong>Hoofddeksels &amp; sieraden</strong><span>Controleer hoofdomtrek, sluiting, kettinglengte en materiaalinformatie.</span></li>
+            <li><strong>Tassen &amp; riemen</strong><span>Noteer buitenmaten, draaglengte en bruikbare sluitgaten.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="workflow-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">02 / Van losse tabbladen naar overzicht</p>
+          <h2 id="workflow-title">Drie stappen voor een bruikbare shortlist.</h2>
+        </div>
+        <p>Gebruik deze BaseTao koopgids als werkwijze voor je eigen notities. Deze pagina bevat geen downloadbaar bestand en importeert geen bestellingen.</p>
+      </div>
+      <div class="guide-grid">
+        <article class="guide">
+          <span class="number">STAP 01</span>
+          <h3>Leg de vondst vast</h3>
+          <p>Bewaar je BaseTao productlinks samen met de originele bron en de datum waarop je keek. Zo herken je later een gewijzigde of verlopen verwijzing.</p>
+          <ul>
+            <li>Productnaam en categorie</li>
+            <li>Verkoper en oorspronkelijke URL</li>
+            <li>Gekozen kleur, maat en uitvoering</li>
+          </ul>
+        </article>
+        <article class="guide">
+          <span class="number">STAP 02</span>
+          <h3>Controleer de details</h3>
+          <p>Maak onderscheid tussen promotiefoto’s, een maattabel en foto’s van het specifieke artikel. Schrijf op welke informatie nog ontbreekt.</p>
+          <ul>
+            <li>Afmetingen in centimeters</li>
+            <li>Materiaal volgens de aanbieding</li>
+            <li>Fotobron en openstaande vragen</li>
+          </ul>
+        </article>
+        <article class="guide">
+          <span class="number">STAP 03</span>
+          <h3>Vergelijk het totaal</h3>
+          <p>Een lage artikelprijs zegt weinig zonder de overige kosten. Bewaar bedragen in de oorspronkelijke valuta en zet ramingen apart.</p>
+          <ul>
+            <li>Artikelprijs en binnenlandse verzending</li>
+            <li>Service, betaling en internationale verzending</li>
+            <li>Toepasselijke belastingen en invoerkosten</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="comparison-title">
+      <p class="eyebrow">03 / De gegevens die verschil maken</p>
+      <h2 id="comparison-title">Vergelijk kenmerken, niet alleen foto’s.</h2>
+      <div class="table-box">
+        <table>
+          <caption>Handige controlevelden voor je eigen productoverzicht</caption>
+          <thead>
+            <tr><th scope="col">Onderdeel</th><th scope="col">Wat leg je vast?</th><th scope="col">Waar let je op?</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Schoenen</th><td>Maatlabel, voetlengte en beschikbare binnenzoolmeting</td><td>Verschillen tussen maatsystemen en de pasvorm van het specifieke model.</td></tr>
+            <tr><th scope="row">Hoodies &amp; T-shirts</th><td>Borstbreedte, ruglengte en eventuele informatie over stofgewicht</td><td>Plat gemeten borstbreedte is geen volledige borstomtrek; stofgewicht bewijst geen kwaliteit.</td></tr>
+            <tr><th scope="row">Jassen</th><td>Schouderbreedte, mouwlengte en ruimte voor lagen</td><td>Een productfoto toont niet vanzelf hoe dik of warm de jas is.</td></tr>
+            <tr><th scope="row">Broeken &amp; shorts</th><td>Taille, heup, binnenbeenlengte en rek</td><td>Controleer of de taille ontspannen of uitgerekt is gemeten.</td></tr>
+            <tr><th scope="row">Hoofddeksels &amp; accessoires</th><td>Hoofdomtrek, afmetingen, sluiting en materiaal</td><td>Foto’s kunnen formaat vertekenen; vraag om een duidelijke maatvermelding.</td></tr>
+            <tr><th scope="row">Kosten &amp; verzending</th><td>Valuta, gewicht, pakketmaten en datum van de raming</td><td>Controleer welke toeslagen en belastingen al in het bedrag zitten.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note"><strong>Een leeg veld is ook informatie.</strong> Schrijf “onbekend” wanneer een verkoper geen meting, samenstelling of duidelijke foto verstrekt. Een aanname maakt twee producten niet beter vergelijkbaar.</p>
+      <div class="topics">
+        <article class="topic">
+          <h3>Sets: twee pasvormen</h3>
+          <p>Vergelijk boven- en onderstuk afzonderlijk. Controleer of je aparte maten kunt kiezen en of beide delen inbegrepen zijn.</p>
+        </article>
+        <article class="topic">
+          <h3>Jerseys: kijk naar de print</h3>
+          <p>Bekijk plaatsing van nummers, naden en bedrukking. Een foto voorspelt niet hoe een print zich na het wassen houdt.</p>
+        </article>
+        <article class="topic">
+          <h3>Ondergoed: materiaal eerst</h3>
+          <p>Lees de samenstelling, taillemeting en onderhoudsinstructies. Controleer ook de retourvoorwaarden voor hygiëneartikelen.</p>
+        </article>
+        <article class="topic">
+          <h3>Sieraden: vraag door</h3>
+          <p>Noteer lengte, sluiting en opgegeven metaalsoort. Uiterlijk of kleur is geen bewijs van samenstelling of huidverdraagzaamheid.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="articles-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">04 / Korte leesstukken</p>
+          <h2 id="articles-title">Meer zekerheid begint bij betere vragen.</h2>
+        </div>
+        <p>Praktische verdieping bij je productonderzoek: dezelfde variant vergelijken, BaseTao QC-foto’s lezen en een verzendraming begrijpen.</p>
+      </div>
+      <div class="detail-layout">
+        <figure class="detail-image">
+          <img src="https://urbanexchangeclothing.com/cdn/shop/files/Photoroom_20251023_113619_2.jpg?v=1761247369&amp;width=925" width="740" height="925" loading="lazy" decoding="async" alt="Modeaccessoires op een donkere tafel, met een Dior-tas en riemen met Gucci- en Louis Vuitton-details">
+          <figcaption>Accessoires als visuele inspiratie. Beeldbron: Urban Exchange Scottsdale. Getoonde merken en modellen zijn geen voorraadbelofte.</figcaption>
+        </figure>
+        <div>
+          <article class="article">
+            <h3>Een bruikbare vergelijking begint bij dezelfde variant</h3>
+            <p>Twee aanbiedingen lijken soms identiek, terwijl de ene foto een andere uitvoering toont. Bewaar daarom de gekozen kleur, maat, materiaalomschrijving en variantnaam in dezelfde rij. Vergelijk vervolgens de voorwaarden en kosten op basis van die selectie.</p>
+            <p>Voor kleding is een goed passend eigen kledingstuk een nuttig meetpunt. Meet het op dezelfde manier als de verkoper. Controleer bij een maattabel eerst of de getallen lichaamsmaten of afmetingen van het kledingstuk zijn.</p>
+          </article>
+          <article class="article">
+            <h3>QC-foto’s lezen zonder te veel in te vullen</h3>
+            <p>Controleer eerst of de beelden bij jouw bestelling en gekozen variant horen. Bekijk daarna het gehele artikel, de voor- en achterkant, naden, sluitingen en eventuele meetfoto’s. Noteer een zichtbaar probleem zo concreet mogelijk.</p>
+            <p>Een donker vlak kan een schaduw zijn en een andere tint kan door verlichting ontstaan. Vraag om aanvullend beeld als een belangrijk detail onduidelijk blijft. QC-foto’s bewijzen geen authenticiteit, materiaalsamenstelling of langdurige slijtvastheid.</p>
+          </article>
+          <article class="article">
+            <h3>De artikelprijs is het begin van de berekening</h3>
+            <p>Noteer elke kostenpost afzonderlijk. Internationale verzending kan afhangen van werkelijk gewicht, pakketafmetingen, bestemming en vervoerder. Bij volumetrisch gewicht telt de ruimte van het pakket mee; de gebruikte berekening verschilt per dienst.</p>
+            <p>Controleer vóór betaling de actuele offerte, wisselkoers, betaalvergoeding en toepasselijke invoerregels. Leg vast wat al is inbegrepen om dubbel tellen te voorkomen. Een eerdere verzendervaring is geen vaste prijs of levertijd voor een nieuwe zending.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="faq">
+        <p class="eyebrow">05 / Direct antwoord</p>
+        <h2 id="faq-title">Veelgestelde vragen</h2>
+
+        <details open>
+          <summary>Wat is een BaseTao spreadsheet?</summary>
+          <p>Een BaseTao spreadsheet is een geordend overzicht van productverwijzingen en eigen onderzoeksnotities. Je kunt er categorie, variant, maten, kosten en fotocontroles in vastleggen. Een vermelding bewijst geen voorraad, kwaliteit of authenticiteit.</p>
+        </details>
+        <details>
+          <summary>Kan ik op deze pagina een spreadsheet downloaden?</summary>
+          <p>Nee. Deze pagina biedt een leesbare gids en categorie-ingangen naar HipobuyFind. Er is hier geen downloadbaar spreadsheetbestand of live koppeling met een BaseTao-account.</p>
+        </details>
+        <details>
+          <summary>Hoe vergelijk ik kledingmaten?</summary>
+          <p>Vergelijk de afmetingen in centimeters van de gekozen variant met een goed passend kledingstuk dat je al bezit. Controleer hoe de verkoper meet en of de tabel lichaamsmaten of kledingmaten vermeldt.</p>
+        </details>
+        <details>
+          <summary>Wat vertellen QC-foto’s mij?</summary>
+          <p>QC-foto’s kunnen zichtbare kenmerken van een specifiek artikel tonen, zoals kleur, naden en afmetingen. Controleer of de foto’s bij jouw bestelling en variant horen. Foto’s bewijzen geen authenticiteit, samenstelling of duurzaamheid.</p>
+        </details>
+        <details>
+          <summary>Hoe bereken ik de totale kosten?</summary>
+          <p>Tel de artikelprijs, binnenlandse verzending, eventuele servicekosten, internationale verzending en toepasselijke belastingen of invoerkosten bij elkaar op. Controleer wat al in een offerte is inbegrepen en gebruik de actuele wisselkoers en betaalvoorwaarden.</p>
+        </details>
+        <details>
+          <summary>Is deze pagina officieel verbonden met BaseTao of de getoonde merken?</summary>
+          <p>Nee. Dit is een onafhankelijke informatiepagina. Er wordt geen officiële samenwerking met BaseTao, Nike, Louis Vuitton, Gucci, Hermès of Dior geclaimd. Sfeerbeelden zijn geen bewijs van aanbod of authenticiteit.</p>
+        </details>
+        <details>
+          <summary>Waar gaan de categorieknoppen naartoe?</summary>
+          <p>De tien categorieknoppen openen de bijbehorende categorie op hipobuyfind.com. De overige navigatielinks openen de homepage van www.hipobuyfind.com.</p>
+        </details>
+      </div>
+    </section>
+
+    <aside class="closing" aria-label="Verder ontdekken">
+      <div>
+        <h2>Een kortere lijst. Een duidelijkere keuze.</h2>
+        <p>Begin met één categorie, kies enkele interessante modellen en noteer wat je nog wilt controleren.</p>
+      </div>
+      <a class="button" href="https://www.hipobuyfind.com">Verder ontdekken ↗</a>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="wordmark" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <p>Een onafhankelijke Nederlandstalige gids rond BaseTao spreadsheet-onderzoek. Merknamen dienen ter herkenning en bespreking. De afgebeelde producten zijn stijlinspiratie; controleer beschikbaarheid, herkomst, authenticiteit en voorwaarden bij de betreffende aanbieder. Deze pagina verwerkt geen bestellingen en toont geen live prijzen of beoordelingen.</p>
+    </div>
+  </footer>
+</body>
+</html>
